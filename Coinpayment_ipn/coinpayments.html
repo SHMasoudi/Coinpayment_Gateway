@@ -3,7 +3,7 @@
 
     <input type="hidden" name="cmd" value="_pay_simple">
     <input type="hidden" name="reset" value="1">
-    <input type="hidden" name="merchant" value="e656deef2d121cec6c638bb956fb97ad">
+    <input type="hidden" name="merchant" value="your merchant">
     <input type="hidden" name="item_name" value="{{cTitle}}">
     <input type="hidden" name="item_number" value="1">
     <input type="hidden" name="invoice" value="">
@@ -11,8 +11,8 @@
     <input type="hidden" name="amountf" value="{{cPrice}}">
     <input type="hidden" id="tkn" name="tkn" value="{{ sttkn }}" >
     <input type="hidden" id="crs" name="crs" value="{{ cSlug }}" >
-    <input type="hidden" id="ipn_url" name="ipn_url" value="http://app.pitedu.net/payments/coinpayment_ipn/?tkn={{sttkn}}&crs={{cSlug}}">
-    <input type="hidden"  name="success_url" value="http://199.192.30.49:8080/payments/Coinpayment_checkout/?tkn={{sttkn}}&crs={{cSlug}}">
+    <input type="hidden" id="ipn_url" name="ipn_url" value="http://yourdomain/payments/coinpayment_ipn/?tkn={{sttkn}}&crs={{cSlug}}">
+    <input type="hidden"  name="success_url" value="http://yourdomain/payments/Coinpayment_checkout/?tkn={{sttkn}}&crs={{cSlug}}">
     <input type="image" src="https://www.coinpayments.net/images/pub/buynow-wide-blue.png" alt="Buy Now with CoinPayments.net" style="margin-left:130px;">
    
 </form>
